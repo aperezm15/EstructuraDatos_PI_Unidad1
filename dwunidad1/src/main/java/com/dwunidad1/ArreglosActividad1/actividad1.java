@@ -17,6 +17,10 @@ public class actividad1 {
            numeros[i] = random.nextInt(11); 
         }
 
+        System.out.println("\n-------------------------");
+        System.out.println("Punto 1, Declaracion y creacion de un arreglo");
+        System.out.println("-------------------------");
+
         //For-each para verificar que el arreglo haya sido creado
         System.out.print("arreglo creado: ");
         for (int n : numeros) {
@@ -29,8 +33,13 @@ public class actividad1 {
             System.out.print(numeros[i]+", ");
         }
 
+        System.out.println();
+        System.out.println("\n-------------------------");
+        System.out.println("Punto 2, Recorrido y mostrar");
+        System.out.println("-------------------------");
+
         //Recorrido del arreglo con for-each
-        System.out.println("\nRecorrido con for-each");
+        System.out.println("Recorrido con for-each");
         for (int n : numeros) {
             System.out.print(n+", ");
         }
@@ -39,7 +48,7 @@ public class actividad1 {
         //de Modificacion, donde se nos pide, cambiar todos los valores impares por cero y
         //Miltiplicar todos los valores por su indice.
         
-
+        System.out.println();
         System.out.println("\n-------------------------");
         System.out.println("Punto 3, Modificacion: identificar impares");
         System.out.println("-------------------------");
@@ -71,15 +80,26 @@ public class actividad1 {
             System.out.println();
         }
 
+
+        //Creamos otro array para hacer el ejercicio de busquedad lineal
         int[] numeros3 = {1,2,3,4,5,6,7,8,9,10};
         System.out.println("\n-------------------------");
         System.out.println("Punto 3, Busqueda");
         System.out.println("-------------------------");
+        System.out.println(">>>>Buscaremos el numero 7<<<<");
+        //hacemos un recorrido de los numeros del array, del 1 al 10.
         for (int i=0;i < numeros3.length; i++) {
+            //imprime los numeros del array mientras va haciendo el recorrido.
             System.out.println(numeros3[i]);
+            //asignamos una variable con un valor, el cual sera el que se buscara en el array
             int valorBuscado = 7;
+            //Creamos un if, que nos diga que el numero en tiempo real que va recorriendo en el array es igual al valor de la variable
+            //que creamos.
             if (numeros3[i] == valorBuscado){
+                //Si lo encuentra, nos soltara un print, que nos hara saber que el numero fue encontrado
                 System.out.println("Numero "+valorBuscado+" Encontrado.");
+                //con este comando finalizamos los recorridos, y no seguira el recorrido completo, que seria hasta el 10.
+                //al llegar a 7 se rompe el codigo.
                 break;
             }
         } 
