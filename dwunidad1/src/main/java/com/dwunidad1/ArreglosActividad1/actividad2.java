@@ -17,8 +17,16 @@ public class actividad2 {
             System.out.println("---Matriz Creada---");
             imprimirMatriz(matriz);
 
-
-
+            //Recorrido de matriz por columnas
+            System.out.println("\n--- Recorrido por Columnas ---");
+            //Hacemos el for anidado pero invertimos en el print, las los indices.
+            //Primero recorre j y dentro de cada valor de j, recorrera i
+            for (int i=0;i < matriz.length; i++){
+                for (int j=0;j < matriz.length; j++) {
+                    System.out.print(matriz[j][i]+"\t");
+                }
+                System.out.println();
+            }
 
 
 }
