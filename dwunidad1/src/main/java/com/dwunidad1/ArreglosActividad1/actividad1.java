@@ -17,9 +17,9 @@ public class actividad1 {
            numeros[i] = random.nextInt(11); 
         }
 
-        System.out.println("\n-------------------------");
-        System.out.println("Punto 1, Declaracion y creacion de un arreglo");
-        System.out.println("-------------------------");
+            System.out.println("\n-------------------------");
+            System.out.println("Punto 1, Declaracion y creacion de un arreglo");
+            System.out.println("-------------------------");
 
         //For-each para verificar que el arreglo haya sido creado
         System.out.print("arreglo creado: ");
