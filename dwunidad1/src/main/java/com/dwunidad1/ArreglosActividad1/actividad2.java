@@ -2,7 +2,7 @@ package com.dwunidad1.ArreglosActividad1;
 
 public class actividad2 {
     public static void main(String[] args){
-        System.out.println("\n-------------------------");
+            System.out.println("\n-------------------------");
             System.out.println("Punto 1 y 2, Declaracion,inicializacion y Recorrido");
             System.out.println("-------------------------");
 
@@ -28,6 +28,43 @@ public class actividad2 {
                 System.out.println();
             }
 
+            System.out.println("\n-------------------------");
+            System.out.println("Punto 3, Operaciones");
+            System.out.println("-------------------------");            
+            
+            //Asignamos una variable que sera nuestro contador que ira sumando los elementos de la matriz
+            int acumulador = 0;
+
+            System.out.println("Sumando los elementos de la siguente matriz:");
+            System.out.println();
+
+            //Hacemos un for anidado
+            for (int i=0;i < matriz.length; i++) {
+                for (int j=0;j < matriz.length; j++) {
+                    acumulador = acumulador + matriz[i][j];     //le decimos que en cada vuelta que haga en el
+                                                                //interno vaya sumando y guardando en la 
+                                                                //variable acumulador.
+
+                    System.out.print(matriz[i][j]+"\t");        //Imprimimos la tabla para tener visualizacion
+                                                                //de lo que se esta sumando, con su respectiva
+                                                                //tabulacion para que se vea ordenado
+                    
+                } 
+                System.out.println();                           //hacemos salto de linea en for externo
+                                                                //para que se vean ordenadas las filas
+
+
+            }
+            System.out.println();
+            //fuera del for anidado ponemos la variable con la sumatoria de los elementos de la matriz
+            System.out.println("Se ha acumulado de los elementos de la matriz la suma de: "+acumulador);
+
+
+
+
+
+
+            //-------------------------------------METODOS-------------------------------------------
 
 }
             //Este metodo nos ayudara a poder imprimir la matriz que creamos.
