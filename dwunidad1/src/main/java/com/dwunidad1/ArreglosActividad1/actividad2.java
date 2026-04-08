@@ -58,6 +58,32 @@ public class actividad2 {
             System.out.println();
             //fuera del for anidado ponemos la variable con la sumatoria de los elementos de la matriz
             System.out.println("Se ha acumulado de los elementos de la matriz la suma de: "+acumulador);
+            
+            System.out.println();
+
+            System.out.println("---------------------------------------------------------");
+            System.out.println("Intercambio de primera y ultima fila de la siguiente matriz");
+            System.out.println();
+            imprimirMatriz(matriz);
+            System.out.println();
+            
+            
+            int[] temporal = matriz[0];                             //Utilizamos una varible temporal
+                                                                    //para guardar la primera fila [0]
+                                                                    //de la matriz
+
+            matriz[0] = matriz[2];                                  //asginamos al indice 0 o fila 1 el valor
+                                                                    //de el indice 2 o fila 3
+
+            matriz[2] = temporal;                                   //por ultimo al indice 2 o fila 3, le
+                                                                    //le asignamos el valor guardado en la
+                                                                    //variable temporal, que es igual a
+                                                                    //indice 0 o fila 2
+
+            System.out.println("Matriz con filas intercambiadas.");
+            System.out.println();
+            imprimirMatriz(matriz);                                 //se imprime la matriz con el metodo
+
 
 
 
